@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "KZ Ceremonious One";
+  src: url("./assets/fonts/KZ_ceremonious-one.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KZ Ceremonious Two";
+  src: url("./assets/fonts/KZ_ceremonious-two.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KZ Ceremonious Three";
+  src: url("./assets/fonts/KZ_ceremonious-three.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f8f8f8;
+  --beige: #e9e5dc;
+  --gold: #d4af37;
+  --text: #1f1f1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  width: 100%;
+  background: #ffffff;
+}
+
+body {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+
+body {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8f8f8 100%
+  );
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.font-kz-1 {
+  font-family: "KZ Ceremonious One", serif;
+}
+
+.font-kz-2 {
+  font-family: "KZ Ceremonious Two", serif;
+}
+
+.font-kz-3 {
+  font-family: "KZ Ceremonious Three", serif;
+}
+
+.font-cormorant {
+  font-family: "Cormorant SC", serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.4);
+  border-radius: 20px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.959);
+
+  backdrop-filter: blur(90px);
+
+  -webkit-backdrop-filter: blur(90px);
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.05),
+    0 10px 20px rgba(212,175,55,0.08);
+}
+
+.gold-text {
+  color: var(--gold);
+}
+
+.section-padding {
+  padding: 100px 24px;
+}
+
+.container-mobile {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+}
